@@ -3,14 +3,14 @@ if &compatible
 endif
 
 " Required:
-set runtimepath+=/Users/antoxa/.nvim/bundles/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
 
 
 " Required:
-if dein#load_state('/Users/antoxa/.nvim/bundles')
-  call dein#begin('/Users/antoxa/.nvim/bundles')
+if dein#load_state('~/.cache/dein')
+ call dein#begin('~/.cache/dein')
 
-  call dein#add('/Users/antoxa/.nvim/dein.vim')
+ call dein#add('~/.cache/dein')
 
   call dein#add('rizzatti/dash.vim')
 
