@@ -1,0 +1,44 @@
+snippet fro
+# frozen_string_literal: true
+${0}
+endsnippet
+snippet rpry "binding.remote_pry"
+binding.remote_pry${0}
+endsnippet
+snippet req
+require "${1}"
+endsnippet
+snippet reqr
+require_relative "${1}"
+endsnippet
+snippet cla
+class ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+	${0}
+end
+endsnippet
+snippet mod
+module ${1:`substitute(vim_snippets#Filename(), '\(_\|^\)\(.\)', '\u\2', 'g')`}
+	${0}
+end
+endsnippet
+##########################
+#     Rspec snippets     #
+##########################
+snippet desc
+RSpec.describe ${1:`substitute(substitute(vim_snippets#Filename(), '_spec$', '', ''), '\(_\|^\)\(.\)', '\u\2', 'g')`} do
+	${0}
+end
+endsnippet
+snippet cont
+context "${1:message}" do
+	${0}
+end
+endsnippet
+snippet it
+it "should ${1}" do
+	${0}
+end
+endsnippet
+snippet scr "screenshot!"
+screenshot!${0}
+endsnippet

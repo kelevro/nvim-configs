@@ -1,0 +1,4 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =2
+let g:netrw_dirhist_1='/Users/antoxa/web/syndicode/spyplane'
+let g:netrw_dirhist_2='/Users/antoxa/web/syndicode/southern_made/govest-financial-app/project'
